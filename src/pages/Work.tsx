@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import PageTransition from "@/components/PageTransition";
 import SectionHeader from "@/components/SectionHeader";
 import ProjectCard from "@/components/ProjectCard";
+import brainrotRun from "@/assets/brainrot-run.webp";
+import brainrotStairs from "@/assets/brainrot-stairs.webp";
 
 const filters = ["All", "Games", "3D Modeling", "UI Design"] as const;
 type Filter = (typeof filters)[number];
@@ -11,7 +13,7 @@ const projects = [
   {
     title: "Brainrot Run",
     description: "A game on Roblox made nearly entirely by me. Currently being re-released.",
-    image: "https://tr.rbxcdn.com/180DAY-4df67b97774c03e639d3784624bd2809/768/432/Image/Webp/noFilter",
+    image: brainrotRun,
     tags: ["Roblox Studio", "Lua", "Game Design"],
     year: "2025",
     category: "Games" as Filter,
@@ -20,7 +22,7 @@ const projects = [
   {
     title: "Brainrot Stairs",
     description: "Worked as part of the team. Contributed to over 3 million visits.",
-    image: "https://tr.rbxcdn.com/180DAY-707ca29695d1961775353b02c06d8f1b/768/432/Image/Webp/noFilter",
+    image: brainrotStairs,
     tags: ["Roblox Studio", "Lua", "Team Project"],
     year: "2025",
     category: "Games" as Filter,

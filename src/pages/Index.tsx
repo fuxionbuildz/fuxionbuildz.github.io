@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import PageTransition from "@/components/PageTransition";
 import ProjectCard from "@/components/ProjectCard";
+import brainrotRun from "@/assets/brainrot-run.webp";
+import brainrotStairs from "@/assets/brainrot-stairs.webp";
 
 const featuredProjects = [
   {
     title: "Brainrot Run",
     description: "A game on Roblox made nearly entirely by me. Currently being re-released.",
-    image: "https://tr.rbxcdn.com/180DAY-4df67b97774c03e639d3784624bd2809/768/432/Image/Webp/noFilter",
+    image: brainrotRun,
     tags: ["Roblox Studio", "Lua", "Game Design"],
     year: "2025",
     link: "https://www.roblox.com/games/139527994566752/Brainrot-Run",
@@ -16,7 +18,7 @@ const featuredProjects = [
   {
     title: "Brainrot Stairs",
     description: "Worked as part of the team. Contributed to over 3 million visits.",
-    image: "https://tr.rbxcdn.com/180DAY-707ca29695d1961775353b02c06d8f1b/768/432/Image/Webp/noFilter",
+    image: brainrotStairs,
     tags: ["Roblox Studio", "Lua", "Team Project"],
     year: "2025",
     link: "https://www.roblox.com/games/117262185010169/Brainrot-Stairs",
@@ -113,7 +115,7 @@ const Index = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl">
             {featuredProjects.map((project, i) => (
               <ProjectCard key={project.title} {...project} index={i} />
             ))}
