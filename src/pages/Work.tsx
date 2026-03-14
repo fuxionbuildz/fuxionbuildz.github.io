@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import PageTransition from "@/components/PageTransition";
 import SectionHeader from "@/components/SectionHeader";
 import ProjectCard from "@/components/ProjectCard";
+import brainrotRun from "@/assets/brainrot-run.webp";
+import brainrotStairs from "@/assets/brainrot-stairs.webp";
 
 const filters = ["All", "Games", "3D Modeling", "UI Design"] as const;
 type Filter = (typeof filters)[number];
