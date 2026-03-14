@@ -87,7 +87,7 @@ const Contact = () => {
                 href={discordProfileUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-foreground border border-border font-medium rounded-lg text-sm transition-colors hover:bg-muted"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-foreground border border-border font-medium rounded-lg text-sm transition-all duration-200 hover:bg-[#5865F2] hover:border-[#5865F2]"
               >
                 <DiscordLogo />
                 Open Profile
