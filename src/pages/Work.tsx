@@ -85,7 +85,7 @@ const Work = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {filtered.map((project, i) => (
-              <ProjectCard key={project.title} {...project} index={i} />
+              <ProjectCard key={project.title} {...project} index={i} priority={i < 4} />
             ))}
           </div>
         </section>

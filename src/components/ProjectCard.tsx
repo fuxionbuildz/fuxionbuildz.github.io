@@ -9,9 +9,10 @@ interface ProjectCardProps {
   year: string;
   link?: string;
   index: number;
+  priority?: boolean;
 }
 
-const ProjectCard = ({ title, description, image, tags, year, index }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, image, tags, year, index, priority = false }: ProjectCardProps) => {
   const slug = title.toLowerCase().replace(/\s+/g, "-");
 
   return (
@@ -27,21 +28,23 @@ const ProjectCard = ({ title, description, image, tags, year, index }: ProjectCa
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading={priority ? "eager" : "lazy"}
+            fetchPriority={priority ? "high" : "auto"}
+            decoding="async"
           />
         </div>
         <div className="p-5">
-          <div className="flex items-center justify-between mb-2">
-            <h3 className="text-foreground font-medium text-lg">{title}</h3>
-            <span className="font-mono text-xs text-muted-foreground uppercase tracking-widest">{year}</span>
+          <div className="mb-2 flex items-center justify-between">
+            <h3 className="text-lg font-medium text-foreground">{title}</h3>
+            <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{year}</span>
           </div>
-          <p className="text-sm text-muted-foreground leading-relaxed mb-4">{description}</p>
+          <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{description}</p>
           <div className="flex flex-wrap gap-2">
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="px-2.5 py-1 text-xs font-mono text-muted-foreground bg-secondary rounded-md border border-border"
+                className="rounded-md border border-border bg-secondary px-2.5 py-1 text-xs font-mono text-muted-foreground"
               >
                 {tag}
               </span>
