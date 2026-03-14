@@ -27,6 +27,7 @@ const App = () => (
             <Route path="/work" element={<Work />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/project/:slug" element={<ProjectDetail />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
