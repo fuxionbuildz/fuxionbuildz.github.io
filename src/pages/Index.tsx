@@ -18,7 +18,7 @@ const featuredProjects = [
   {
     title: "Brainrot Stairs",
     description: "Worked as part of the team. Contributed to over 3 million visits.",
-    image: "https://tr.rbxcdn.com/180DAY-707ca29695d1961775353b02c06d8f1b/768/432/Image/Webp/noFilter",
+    image: brainrotStairs,
     tags: ["Roblox Studio", "Lua", "Team Project"],
     year: "2025",
     link: "https://www.roblox.com/games/117262185010169/Brainrot-Stairs",
