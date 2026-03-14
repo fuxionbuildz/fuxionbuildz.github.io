@@ -3,15 +3,12 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import PageTransition from "@/components/PageTransition";
 import ProjectCard from "@/components/ProjectCard";
-import brainrotRun from "@/assets/brainrot-run.jpg";
-import brainrotStairs from "@/assets/brainrot-stairs.jpg";
-import scytheModel from "@/assets/scythe-model.jpg";
 
 const featuredProjects = [
   {
     title: "Brainrot Run",
     description: "A game on Roblox made nearly entirely by me. Currently being re-released.",
-    image: brainrotRun,
+    image: "https://tr.rbxcdn.com/180DAY-4df67b97774c03e639d3784624bd2809/768/432/Image/Webp/noFilter",
     tags: ["Roblox Studio", "Lua", "Game Design"],
     year: "2025",
     link: "https://www.roblox.com/games/139527994566752/Brainrot-Run",
@@ -19,7 +16,7 @@ const featuredProjects = [
   {
     title: "Brainrot Stairs",
     description: "Worked as part of the team. Contributed to over 3 million visits.",
-    image: brainrotStairs,
+    image: "https://tr.rbxcdn.com/180DAY-707ca29695d1961775353b02c06d8f1b/768/432/Image/Webp/noFilter",
     tags: ["Roblox Studio", "Lua", "Team Project"],
     year: "2025",
     link: "https://www.roblox.com/games/117262185010169/Brainrot-Stairs",
@@ -27,7 +24,7 @@ const featuredProjects = [
   {
     title: "Scythe Model",
     description: "Realistic scythe 3D model built in Blender with clean topology.",
-    image: scytheModel,
+    image: "https://rodevs.com/media/86af48652b0a-Scythe_render_2_edited_improve.png",
     tags: ["Blender", "3D Modeling"],
     year: "2024",
   },
