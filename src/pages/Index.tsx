@@ -5,6 +5,7 @@ import PageTransition from "@/components/PageTransition";
 import ProjectCard from "@/components/ProjectCard";
 import brainrotRun from "@/assets/brainrot-run.webp";
 import brainrotStairs from "@/assets/brainrot-stairs.webp";
+import scytheModel from "@/assets/scythe-model.png";
 
 const featuredProjects = [
   {
@@ -26,7 +27,7 @@ const featuredProjects = [
   {
     title: "Scythe Model",
     description: "Realistic scythe 3D model built in Blender with clean topology.",
-    image: "https://rodevs.com/media/86af48652b0a-Scythe_render_2_edited_improve.png",
+    image: scytheModel,
     tags: ["Blender", "3D Modeling"],
     year: "2024",
   },
