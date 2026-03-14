@@ -118,7 +118,7 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl">
             {featuredProjects.map((project, i) => (
-              <ProjectCard key={project.title} {...project} index={i} />
+              <ProjectCard key={project.title} {...project} index={i} priority={i < 2} />
             ))}
           </div>
         </section>
