@@ -27,7 +27,7 @@ const featuredProjects = [
   {
     title: "Scythe Model",
     description: "Realistic scythe 3D model built in Blender with clean topology.",
-    image: "https://rodevs.com/media/86af48652b0a-Scythe_render_2_edited_improve.png",
+    image: scytheModel,
     tags: ["Blender", "3D Modeling"],
     year: "2024",
   },
