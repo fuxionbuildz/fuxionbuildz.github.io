@@ -10,7 +10,7 @@ const featuredProjects = [
   {
     title: "Brainrot Run",
     description: "A game on Roblox made nearly entirely by me. Currently being re-released.",
-    image: "https://tr.rbxcdn.com/180DAY-4df67b97774c03e639d3784624bd2809/768/432/Image/Webp/noFilter",
+    image: brainrotRun,
     tags: ["Roblox Studio", "Lua", "Game Design"],
     year: "2025",
     link: "https://www.roblox.com/games/139527994566752/Brainrot-Run",
