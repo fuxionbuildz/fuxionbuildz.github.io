@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import PageTransition from "@/components/PageTransition";
 import SectionHeader from "@/components/SectionHeader";
+import fxLogo from "@/assets/fx-logo.png";
 
 const skillGroups = [
   {
@@ -40,9 +41,7 @@ const About = () => {
             className="rounded-lg border border-border bg-card p-6 md:p-8 mb-12"
           >
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-xl font-bold text-foreground shrink-0">
-                FX
-              </div>
+              <img src={fxLogo} alt="FX" className="w-12 h-12 rounded-full object-cover shrink-0" />
               <div>
                 <h2 className="text-xl font-medium text-foreground mb-1">FX</h2>
                 <p className="text-sm text-muted-foreground font-mono">Developer & 3D Artist</p>
