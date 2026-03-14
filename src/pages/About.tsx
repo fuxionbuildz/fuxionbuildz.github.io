@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import PageTransition from "@/components/PageTransition";
 import SectionHeader from "@/components/SectionHeader";
+import fxLogo from "@/assets/fx-logo.png";
 
 const skillGroups = [
   {
