@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import PageTransition from "@/components/PageTransition";
 import ProjectCard from "@/components/ProjectCard";
+import brainrotRun from "@/assets/brainrot-run.webp";
+import brainrotStairs from "@/assets/brainrot-stairs.webp";
 
 const featuredProjects = [
   {
